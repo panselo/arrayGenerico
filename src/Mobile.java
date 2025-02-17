@@ -28,4 +28,11 @@ public class Mobile {
         return "peso=" + peso + ", prezzo=" + prezzo;
     }
 
+    public boolean equals(Object o){
+        if (o instanceof Mobile){
+            Mobile m = (Mobile) o;
+            return ((m.peso==this.peso) && (m.prezzo==this.prezzo));
+        } else{return false;}
+    }
+
 }

@@ -21,4 +21,11 @@ public class ArrayGenerico<T> {
         return "Elementi del vettore: " + vet;
     }
 
+    public int ricerca(T t){
+        for (int i=0;i<vet.length;i++){
+            if(vet[i].equals(t));
+        }
+        return -1;
+    }
+
 }

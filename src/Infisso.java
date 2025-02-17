@@ -38,4 +38,11 @@ public class Infisso {
         return "materiale= " + materiale + ", altrezza= " + altrezza + ", larghezza= " + larghezza;
     }
 
+    public boolean equals(Object o){
+        if (o instanceof Infisso){
+            Infisso i = (Infisso) o;
+            return ((i.altrezza==this.altrezza) && (i.materiale==this.materiale) && (i.larghezza==this.larghezza));
+        } else{return false;}
+    }
+
 }
